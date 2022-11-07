@@ -34,6 +34,7 @@ public class CustomerController {
         return new ResponseEntity<>(customerService.deleteCustomer(customerId), HttpStatus.OK);
     }
 
+
     @GetMapping("/getDataByCity/{city}")
     public ResponseEntity<?> getDataByCity(@PathVariable String city) throws ClassNotFoundException,Exception{
         return new ResponseEntity<>(customerService.getAllCustomerByCity(city),HttpStatus.FOUND);
