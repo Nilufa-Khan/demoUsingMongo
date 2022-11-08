@@ -25,5 +25,6 @@ public void setUp(){
 public void tearDown(){
     address = null;
     customer = null;
+    customerRepository.deleteAll();
 }
 }
