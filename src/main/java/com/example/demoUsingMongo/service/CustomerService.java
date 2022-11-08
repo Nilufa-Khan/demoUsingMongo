@@ -11,5 +11,6 @@ public interface CustomerService {
     List<Customer> getAllCustomerData() throws CustomerNotFoundException;
 
     public boolean deleteCustomer(int cusId) throws CustomerNotFoundException;
+
     List<Customer> getAllCustomerByCity(String city) throws CustomerNotFoundException;
 }
